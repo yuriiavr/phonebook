@@ -1,0 +1,29 @@
+.link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ff5277;
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+
+.link:hover, .link:focus{
+  color: #fff;
+}
+
+  .link_cont{
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  .activeLink {
+    color: #fff;
+    border-bottom: 3px solid #ff5277;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .activeLink:hover, .activeLink:focus{
+    color: #fff;
+  }

@@ -1,0 +1,42 @@
+body{
+  background-color: #0e141b;
+}
+
+.form {
+  max-width: 450px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.singin_heading{
+  color: #fff;
+}
+
+.reg_btn{
+  background-color: transparent;
+  border: 1px solid #ff5277;
+  color: #ff5277;
+  text-transform: uppercase;
+  padding: 10px 50px;
+}
+
+.reg_btn:hover, .reg_btn:focus{
+  background-color: #ff5277;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.input{
+  background-color: transparent;
+  border: 1px solid #ff5277;
+  color: #ff5277;
+}
+
+.input:hover, .input:focus{
+  background-color: transparent;
+  color: #fff;
+}

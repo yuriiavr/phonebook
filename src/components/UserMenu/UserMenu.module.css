@@ -1,0 +1,27 @@
+.email {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid #ff5277;
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+
+.email:hover, .email:focus{
+  color: #fff;
+}
+
+.logout_btn{
+  background-color: transparent;
+  border: 1px solid #ff5277;
+  color: #ff5277;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.logout_btn:hover, .logout_btn:focus{
+  background-color: #ff5277;
+  border: 1px solid transparent;
+  color: #fff;
+}
