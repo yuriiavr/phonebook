@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/672.a443ef1b.chunk.css","mappings":"AAAA,KACI,wBACJ,CAEA,+BACI,UACJ","sources":["components/NotFoundPage/NotFoundPage.module.css"],"sourcesContent":["body{\n    background-color: #0e141b;\n}\n\n.nf__title{\n    color: #fff;\n}"],"names":[],"sourceRoot":""}
