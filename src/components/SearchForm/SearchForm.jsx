@@ -16,6 +16,7 @@ export default function SearchForm() {
       <Form.Control
         type="text"
         id="inputPassword5"
+        placeholder='Search...'
         value={value}
         aria-describedby="passwordHelpBlock"
         onChange={e => dispatch(actions.changeFilter(e.target.value))}

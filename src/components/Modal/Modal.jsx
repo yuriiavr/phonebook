@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Button from 'react-bootstrap/Button';
+import css from './Modal.module.css';
 import Modal from 'react-bootstrap/Modal';
 import contactsOperations from 'redux/contacts/phone-operations';
 
@@ -89,12 +89,12 @@ export default function ShowModal({ show, handleClose, editableItem }) {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <button className={css.submit__btn} variant="secondary" onClick={handleClose}>
             Cancel
-          </Button>
-          <Button variant="primary" type="submit" onClick={handleChangeSubmit}>
+          </button>
+          <button className={css.submit__btn} variant="primary" type="submit" onClick={handleChangeSubmit}>
             Save Changes
-          </Button>
+          </button>
         </Modal.Footer>
       </Modal>
     </>

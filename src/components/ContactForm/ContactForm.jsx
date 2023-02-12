@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import css from '../ContactForm/ContactForm.module.css';
-
 import contactsOperations from 'redux/contacts/phone-operations';
 
 export default function ContactForm() {
@@ -71,7 +69,7 @@ export default function ContactForm() {
             value={name}
             onChange={handleChange}
           />
-          <Form.Text className="text-muted">Please enter your name</Form.Text>
+          <Form.Text className={css.text__muted}>Please enter your name</Form.Text>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -86,13 +84,13 @@ export default function ContactForm() {
             value={number}
             onChange={handleChange}
           />
-          <Form.Text className="text-muted">
+          <Form.Text className={css.text__muted}>
             Please enter your phone number
           </Form.Text>
         </Form.Group>
-        <Button variant="primary" type="submit" className={css.submit__btn}>
+        <button variant="primary" type="submit" className={css.submit__btn}>
           Add contact
-        </Button>
+        </button>
       </div>
     </Form>
   );

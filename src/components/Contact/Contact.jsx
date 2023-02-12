@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Button from 'react-bootstrap/Button';
 import css from './Contact.module.css';
 
 const Contact = ({ name, number, deleteEl, id, editEl }) => {
@@ -9,21 +8,21 @@ const Contact = ({ name, number, deleteEl, id, editEl }) => {
     <div>
       <ListGroup.Item className={css.contact__info}>
         {name}: {number}
-        <Button
+        <button
           type="button"
           className={` ${css.contact__delete__btn}`}
           onClick={() => deleteEl(id)}
         >
           Delete
-        </Button>
-        <Button
+        </button>
+        <button
           variant="primary"
           type="button"
           className={` ${css.contact__delete__btn}`}
           onClick={() => editEl(id)}
         >
           Edit
-        </Button>
+        </button>
       </ListGroup.Item>
     </div>
   );
